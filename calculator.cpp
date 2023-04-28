@@ -1,0 +1,39 @@
+#include <iostream>
+using namespace std;
+ 
+int main()
+{
+    char op;
+    float num1, num2;
+
+    // User enters operator: +, -, *, /
+    cin >> op;
+
+    // User enters the operands
+    cin >> num1 >> num2;
+
+    switch (op) {
+
+        case '+':
+            cout << num1 + num2;
+            break;
+
+        case '-':
+            cout << num1 - num2;
+            break;
+
+        case '*':
+            cout << num1 * num2;
+            break;
+
+        case '/':
+            cout << num1 / num2;
+            break;
+
+        default:
+            cout << "Error! Operator is not correct.";
+    }
+
+ 
+return 0;
+}
